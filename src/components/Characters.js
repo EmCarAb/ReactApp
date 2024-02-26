@@ -7,8 +7,8 @@ export default function Characters(props) {
 
   return (
     <div className="characters">
-     <h1>Personajes</h1> 
-     <span className="back-home" onClick={resetCharacters}>Volver a la home</span>
+     <h1>Characters</h1> 
+     <span className="back-home" onClick={resetCharacters}>Go back to the homepage</span>
      <div className="container-characters">
       {characters.map((character, index) => (
           <div className="character-container" key={index}>
@@ -31,18 +31,18 @@ export default function Characters(props) {
               )}
             </h6>
             <p className="text-grey">
-              <span>Episodios: </span>
+              <span>Episodes: </span>
               <span>{character.episode.length}</span>
             </p>
             <p className="text-grey">
-              <span>Especie: </span>
+              <span>Specie: </span>
               <span>{character.species}</span>
             </p>
           </div>
         </div>
       ))}
      </div>
-     <span className="back-home" onClick={resetCharacters}>Volver a la home</span>
+     <span className="back-home" onClick={resetCharacters}>Go back to the homepage</span>
     </div>
   )
 }
